@@ -8,7 +8,7 @@ This code implements an image retrieval task on two dataset: CUB200_2011 and Sta
 
 I implement the approach in paper  [*Simultaneous Feature Learning and Hash Coding with Deep Neural Networks*](https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Lai_Simultaneous_Feature_Learning_2015_CVPR_paper.html). And its network is proposed as fellow:
 
-![](Snipaste_2019-08-24_20-25-07.png)
+![](./Snipaste_2019-08-24_20-25-07.png)
 
 As the paper was published early in 2015, the shared sub-network and divide-and-encode module in the network have been out of style. In order to enhance the effect of the network, I replace the sub-network with a pre-trained ResNet-18 as well as replace the divide-and-encode module with a fully connected yer.
 
@@ -22,7 +22,7 @@ that learn similarity-preserving hash functions to encode input data points (e.g
 Triplet ranking loss is designed to characterize that one image is more similar to the second image than
 to the third one.
 
-![](Snipaste_2019-08-24_20-55-30.png)
+![](./Snipaste_2019-08-24_20-55-30.png)
 
 F(I), F(I+) ,F(I-) denote the embeddings of the query image, similar image and dissimilar image respectively.
 
