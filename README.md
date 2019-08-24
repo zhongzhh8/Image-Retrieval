@@ -47,7 +47,7 @@ In order to run this code you will need to install:
 2. Change the arguments datapath_CUB and data_path_dog in main.py to indicate the file path.
 3. Run the command bellow. 
 
-```python
+```Bash
 python main.py --dataset_name 'CUB' --binary_bits 64 --margin 20  --lr 0.001 --ngpu 1
 ```
 And you can change the parameters if you want. I recommand to set margin as 20 when binary_bits is 64 and 8 when binary_bits is 16. It is suggested to set the value of margin as  a bit bigger than a quarter of the value of binary_bits.
